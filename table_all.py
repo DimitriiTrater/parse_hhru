@@ -37,7 +37,9 @@ class DB:
             i += 1
             display.clear_output(wait=True)
             display.display(f'Готово {i} из {cnt_docs}')
-
+        
+        # сюда указывай свою БД
+        # я использую postgresql
         eng = psql.create_engine(
             'postgresql://{Пользователь}:{Пароль}@{Сервер}:{Port}/{База данных}'
         )
